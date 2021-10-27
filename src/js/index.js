@@ -3,7 +3,6 @@ import data from './data';
 
 
 function openTab(evt, id) {
-
   let tabs = document.getElementsByClassName('tabs__tab');
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].classList.remove('tabs__tab--active');
@@ -14,6 +13,7 @@ function openTab(evt, id) {
     tabBtn[i].classList.remove('tabs__controls-btn--active');
   }
 
+  // @todo implement persistence: save selected tab into local storage
   document.getElementById(id).classList.add('tabs__tab--active');
   evt.currentTarget.classList.add('tabs__controls-btn--active');
 }

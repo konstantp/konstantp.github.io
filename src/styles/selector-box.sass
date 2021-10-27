@@ -61,6 +61,10 @@
         &:before
           opacity: 0.5
 
+    &:focus
+      & + label
+        outline: 1px dashed $black
+
 @media (min-width: 610px)
   .selector-box
     &__option
