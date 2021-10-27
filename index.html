@@ -10,40 +10,7 @@
 </head>
 <body>
     <div id="app"></div>
-    <div class="tabs">
-        <div class="tabs__controls">
-            <h3 class="tabs__controls-title">Please select one font</h3>
-            <ul class="tabs__controls-list" role="tablist">
-                <li><button class="tabs__controls-btn tabs__controls-btn--active" onclick="openTab(event, 'tab-1')" role="tab">My Fonts</button></li>
-                <li><button class="tabs__controls-btn" onclick="openTab(event, 'tab-2')" role="tab">Buy Fonts</button></li>
-            </ul>
-        </div>
-        <div class="tabs__content">
-            <div id="tab-1" class="tabs__tab tabs__tab--active" role="tabpanel">
-                <ul class="selector-box">
-                   <li class="selector-box__option selector-box__option--primary">
-                       <input type="radio" id="option-1" name="card_selector_group" value="Merriweather">
-                       <label for="option-1" data-content="M" style="--bg-color: #00a652;"><span>Merriweather project is led by Sorkin Type</span></label>
-                   </li>
-
-                    <li class="selector-box__option">
-                        <input type="radio" id="option-2" checked="checked" name="card_selector_group" value="Roboto">
-                        <label for="option-2" data-content="R" style="--bg-color: #ff7fc2;"><span>Roboto doesn't compromise, allowing letters</span></label>
-                    </li>
-
-                    <li class="selector-box__option">
-                        <input type="radio" id="option-3" name="card_selector_group" value="NotoSans">
-                        <label for="option-3" data-content="NS" style="--bg-color: #006dfe;"><span>Noto Sans covers over 30 scripts</span></label>
-                    </li>
-                </ul>
-            </div>
-            <div id="tab-2" class="tabs__tab" role="tabpanel">
-                <div class="card-box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twig.js/1.15.0/twig.min.js" integrity="sha512-R9w7cGfL8kjpDIAhW2Mgji+lbq06vKWJX/Qztpq0ya5tD8YMGvRS2fco4p2EYTy93V/lDwp7hRnlHVkCyIrnHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/scripts.js"></script>
 </body>
 </html>
