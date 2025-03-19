@@ -25,14 +25,14 @@ search.addWidgets([
             <p>
               ${components.Highlight({ hit, attribute: 'seo.description' })}
             </p>
-            <p>${components.Highlight({ hit, attribute: 'url' })}</p>
+            <p><a href="${components.Highlight({ hit, attribute: 'url' })}" target="_blank"></a>${components.Highlight({ hit, attribute: 'url' })}</a></p>
           </div>
         </article>
       `,
     },
   }),
   instantsearch.widgets.configure({
-    hitsPerPage: 8,
+    hitsPerPage: 10,
   }),
   instantsearch.widgets.pagination({
     container: '#pagination',
