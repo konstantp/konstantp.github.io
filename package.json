@@ -1,28 +1,20 @@
 {
-  "name": "ffwtest",
+  "name": "instantsearch-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "babel-jest": "^27.3.1",
-    "jest": "^27.3.1"
-  },
+  "private": true,
   "scripts": {
-    "test": "jest",
-    "style": "sass src/styles/styles.sass assets/styles.css",
-    "style:dev": "sass --watch src/styles/styles.sass assets/styles.css",
-    "scripts": "babel src/js/index.js --out-file assets/scripts.js",
-    "scripts:dev": "babel src/js/index.js --watch --out-file assets/scripts.js --source-maps",
-    "dev": "yarn style:dev && scripts:dev",
-    "build": "yarn scripts && yarn style"
+    "start": "parcel index.html --port 3000",
+    "build": "parcel build index.html",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write ."
   },
-  "jset": {
-    "testEnvironment": "jsdom"
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "parcel": "2.0.1",
+    "prettier": "2.6.2"
   },
   "dependencies": {
-    "twig": "^1.15.4"
+    "algoliasearch": "4",
+    "instantsearch.js": "4.78.0"
   }
 }
